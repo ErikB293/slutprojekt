@@ -317,20 +317,13 @@ label{
     width: 10vw;
     height: 5vh;
 }
-.bricka{
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    padding: 2px 10px;
-    background: #d6d6d6;
-    color: #1a216B;
-    border-radius: 50%;
-    display: none;
-}
-.shoppingVagnRuta{
+#informationShoppingVagn{
     background-color: #d6d6d6;
-    width: 100%;
+    width: 20vh;
+    min-height: 20vh;
+    position: absolute;
     display: none;
+    right: 0px;
     border-radius: 10px;
 }
 .imgKundvagn{

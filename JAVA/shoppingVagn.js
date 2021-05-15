@@ -1,31 +1,39 @@
-let räknare= 0;
-let tot = 0;
+let total = 0;
 
 function rensa() {
     let tabell = document.getElementById("vagn");
     tabell.innerHTML = "<tr><td>Name</td><td>Pris</td></tr>";
-    räknare = 0;
-     tot = 0;
-     updateElements();
-    plus1();
-   
-}
+    total = 0;
+    updateElements(total);
 
-function vagnAktiv() {
-   
-    let x = document.getElementById("purchaseInfo");
- 
-    if (x.style.display != "block") {
-        x.style.display = "block";
-    } else {
-        x.style.display =- "none";
+}
+function betala() {
+    if (total != 0) {
+        rensa();
+        alert('Allt är betalat');
     }
 }
 
-function add2Cart(namn, pris) {
+function vagnAktiv() {
+
+    let x = document.getElementById("informationShoppingVagn");
+    console.log("Hello sucker")
+    if (x.style.display != "block") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function add2Cart(obj) {
+
+
+    let namn = obj.innerHTML;
+    let pris = parseInt(obj.value);
+
     console.log(namn + " kostar " + pris + " SEK");
 
-    let tabell = document.getElementById("Cart");
+    let tabell = document.getElementById("vagn");
     let rad = tabell.insertRow();
     let cell1 = rad.insertCell();
     cell1.innerHTML = namn;
@@ -33,24 +41,15 @@ function add2Cart(namn, pris) {
     cell2.innerHTML = pris + " SEK";
 
     total += pris;
-    counter++;
-    
-    updateElements();
-    plus1();
+
+    updateElements(total);
+
+
+    console.log(obj);
+    console.log(obj.value);
+    console.log(obj.innerHTML);
 }
 
-function updateElements(){
-    document.getElementById("totalsum").innerHTML = "Total: " + total + " SEK";
-    document.getElementById("counter").innerHTML = counter;
-}
-
-function plus1(){
-    let x = document.getElementById("counter");
-    if(counter >= 1){
-        x.style.display = "block";
-    }
-    else if( counter == 0){
-        x.style.display = "none";
-    }
-    
+function updateElements(total) {
+    document.getElementById("Summa").innerHTML = "Total: " + total + " SEK";
 }

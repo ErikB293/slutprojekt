@@ -1,137 +1,135 @@
 <HTMl lang="en">
 
-    <head>
-        <link rel="stylesheet" href="../CSS/Stilark.css">
-        <link rel="stylesheet" href="../CSS/Stilark Cards.css">
-        <link rel="stylesheet" href="../CSS/Stilark Forms.css">
-        <title>Björkbäcks Advokatbyrå</title>
-        <meta charset="UTF-8">
-        <script src=""></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-            crossorigin="anonymous"></script>
-    </head>
-    
-    <body>
-        <header class="header">
-            <img src="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG"
-                alt="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG">
-            <nav class="nav">
-                <ul>
-                    <li><a href="Index.html">Startsida</a></li>
-                    <li><a href="priser.html">Priser</a></li>
-                    <li><a href="tjänster.html">Tjänster</a></li>
-                    <li><a href="kontaktaOss.html">Kontakta oss</a></li>
-                    <li><a href="medarbetare.html">Medarbetare</a></li>
-                </ul>
-            </nav>
-            <div class="shoppingVagn">
-                <span class="bricka" id="räknare">0</span>
-                <img class="imgKundvagn"src="../Bilder/Shopping cart grå.svg" alt="../Bilder/Shoppinh cart Grå.svg" onclick="vagnAktiv();">
-                <div id="informationShoppingVagn" class="shoppingVagnRuta">
-                    <table id="vagn">
-                        <tr>
-                            <td>Avtal</td>
-                            <td>Pris</td>
-                        </tr>
-                    </table>
-                    <div id="Summa">0 sek</div>
-                    <button onclick="rensa()" class="rensa">Röj Avtal</button>
-                    <button onclick="betala()" class="betala">Betala</button>
+<head>
+    <link rel="stylesheet" href="../CSS/Stilark.css">
+    <link rel="stylesheet" href="../CSS/Stilark Cards.css">
+    <link rel="stylesheet" href="../CSS/Stilark Forms.css">
+<script src="../JAVA/shoppingVagn.js"></script>
+    <title>Björkbäcks Advokatbyrå</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG"
+            alt="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG">
+        <nav class="nav">
+            <ul>
+                <li><a href="Index.html">Startsida</a></li>
+                <li><a href="priser.html">Priser</a></li>
+                <li><a href="tjänster.html">Tjänster</a></li>
+                <li><a href="kontaktaOss.html">Kontakta oss</a></li>
+                <li><a href="medarbetare.html">Medarbetare</a></li>
+            </ul>
+        </nav>
+        <div class="shoppingVagn" onClick="vagnAktiv()">
+            <img class="imgKundvagn" src="../Bilder/Shopping cart grå.svg" alt="../Bilder/Shoppinh cart Grå.svg">
+        </div>
+    </header>
+
+
+    <div id="informationShoppingVagn" class="shoppingVagnRuta">
+        <table id="vagn">
+            <tr>
+                <td>Avtal</td>
+                <td>Pris</td>
+            </tr>
+        </table>
+        <div id="Summa">0 sek</div>
+        <button onclick="rensa()" class="rensa">Röj Avtal</button>
+        <button onclick="betala()" class="betala">Betala</button>
+    </div>
+
+
+
+    <section>
+        <div class="container">
+
+            <h1>Tjänster</h1>
+
+            <img class="tjänsterbild1" src="../Bilder/Tjänster.jpg" alt="">
+
+            <div class="avsnitt">
+                <h2>Boka möte</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h2>
+                            Vill du boka ett möte?
+                        </h2>
+                        <h3>
+                            Ifall du inte vet vilket avtal du behöver eller ifall du inte vet vad
+                            avtalen betyder så skadar det inte att boka ett digitalt möte med oss
+                            här på hemsidan eller ifall du vill hellre vara här i verkligenheten
+                            skulle det också gå. <br><br>
+                            I vilket fall så är dessa digitala möten gratis bara för att kunna
+                            hjälpa er att göra det bästa valet.
+                        </h3>
+                    </div>
                 </div>
             </div>
-        </header>
-    
-    
-    
-    
-    
-        
-        <section>
-            <div class="container">
-
-                <h1>Tjänster</h1>
-
-                <img class="tjänsterbild1"src="../Bilder/Tjänster.jpg" alt="">
-
-                <div class="avsnitt">
-                    <h2>Boka möte</h2>
+            <div class="avsnitt">
+                <h2>Privatavtal</h2>
+                <div class="lillaAvsnittet">
                     <div class="card">
                         <div class="card-body">
-                            <h2>
-                                Vill du boka ett möte?
-                            </h2>
                             <h3>
-                                Ifall du inte vet vilket avtal du behöver eller ifall du inte vet vad 
-                                avtalen betyder så skadar det inte att boka ett digitalt möte med oss 
-                                här på hemsidan eller ifall du vill hellre vara här i verkligenheten 
-                                skulle det också gå. <br><br>
-                                I vilket fall så är dessa digitala möten gratis bara för att kunna 
-                                hjälpa er att göra det bästa valet. 
+                                Här kan ni beställa era avtal som en vanlig internet shopp. Klicka på knappen
+                                så kommer just det avtalet att läggas in i varkorgsvagnen uppe i högra hörnet
+                                där ni sedan kan betala
                             </h3>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="avsnitt">
-                    <h2>Privatavtal</h2>
-                    <div class="lillaAvsnittet">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>
-                                    Här kan ni beställa era avtal som en vanlig internet shopp. Klicka på knappen 
-                                    så kommer just det avtalet att läggas in i varkorgsvagnen uppe i högra hörnet 
-                                    där ni sedan kan betala
-                                </h3>
-                                <div class="buttons">
-                                    <button> Bodelnings avtal - Gifta </button>
-                                    <button> Köpekontrakt - allmänt </button>
-                                    <button> Testamente </button>
-                                    <button> Skilsmässohjälpen </button>
-                                    <button> Överklaga parkeringsböter </button>
-                                    <button> Äktenskapsförord </button>
-                                    <button> Köpekontrakt för bil </button>
-                                    <button> Regressavtal </button>
-                                </div>
+                            <div class="buttons">
+                                <button value=1000 onclick="add2Cart(this)"> Bodelnings avtal - Gifta </button>
+                                <button> Köpekontrakt - allmänt </button>
+                                <button> Testamente </button>
+                                <button> Skilsmässohjälpen </button>
+                                <button> Överklaga parkeringsböter </button>
+                                <button> Äktenskapsförord </button>
+                                <button> Köpekontrakt för bil </button>
+                                <button> Regressavtal </button>
                             </div>
                         </div>
-                        <a href="priser.html">
-                            <button>Priser</button>
-                            </a>
                     </div>
-                    
-                </div>  
-                        
+                    <a href="priser.html">
+                        <button>Priser</button>
+                    </a>
+                </div>
+
             </div>
-        </section>
-    
-    
-    
-    
-    
-    
-    
-        <footer>
-            <div class="footerLeft">
-                <ul>
-                    <li>B.Advokatbyra@gmail.com</li>
-                    <li>036-456135</li>
-                    <li>Klicka på knappen för att kontakta oss på hemsidan</li>
-                    <li><button>Kontakta oss</button></li>
-                </ul>
-                <ul class="footerUl">
-                    <li>Snabblänkar</li>
-                    <li><a href="Index.html">Startsida</a></li>
-                    <li><a href="priser.html">Priser</a></li>
-                    <li><a href="tjänster.html">Tjänster</a></li>
-                    <li><a href="kontaktaOss.html">Kontakta oss</a></li>
-                    <li><a href="medarbetare.html">Medarbetare</a></li>
-                </ul>
-            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <div class="footerLeft">
             <ul>
-                <li>Björkbäcks advokatbyrå <img src="" alt=""></li>
-                <li>Sedan 2021</li>
+                <li>B.Advokatbyra@gmail.com</li>
+                <li>036-456135</li>
+                <li>Klicka på knappen för att kontakta oss på hemsidan</li>
+                <li><button>Kontakta oss</button></li>
             </ul>
-        </footer>
-    </body>
-    
-    </HTMl>
+            <ul class="footerUl">
+                <li>Snabblänkar</li>
+                <li><a href="Index.html">Startsida</a></li>
+                <li><a href="priser.html">Priser</a></li>
+                <li><a href="tjänster.html">Tjänster</a></li>
+                <li><a href="kontaktaOss.html">Kontakta oss</a></li>
+                <li><a href="medarbetare.html">Medarbetare</a></li>
+            </ul>
+        </div>
+        <ul>
+            <li>Björkbäcks advokatbyrå <img src="" alt=""></li>
+            <li>Sedan 2021</li>
+        </ul>
+    </footer>
+</body>
+
+</HTMl>

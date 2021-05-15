@@ -1,0 +1,189 @@
+<HTMl lang="en">
+
+<head>
+    <link rel="stylesheet" href="../CSS/Stilark.css">
+    <link rel="stylesheet" href="../CSS/Stilark Cards.css">
+    <link rel="stylesheet" href="../CSS/Stilark Forms.css">
+    <title>Björkbäcks Advokatbyrå</title>
+    <meta charset="UTF-8">
+    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG"
+            alt="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG">
+        <nav class="nav">
+            <ul>
+                <li><a href="Index.html">Startsida</a></li>
+                <li><a href="priser.html">Priser</a></li>
+                <li><a href="tjänster.html">Tjänster</a></li>
+                <li><a href="kontaktaOss.html">Kontakta oss</a></li>
+                <li><a href="medarbetare.html">Medarbetare</a></li>
+            </ul>
+        </nav>
+        <div class="shoppingVagn">
+            <span class="bricka" id="räknare">0</span>
+            <img class="imgKundvagn"src="../Bilder/Shopping cart grå.svg" alt="../Bilder/Shoppinh cart Grå.svg" onclick="vagnAktiv();">
+            <div id="informationShoppingVagn" class="shoppingVagnRuta">
+                <table id="vagn">
+                    <tr>
+                        <td>Avtal</td>
+                        <td>Pris</td>
+                    </tr>
+                </table>
+                <div id="Summa">0 sek</div>
+                <button onclick="rensa()" class="rensa">Röj Avtal</button>
+                <button onclick="betala()" class="betala">Betala</button>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    
+    <section>
+        <div class="container">
+
+            <h1>Startsida</h1>
+
+            <img class="tjänsterbild1"src="../Bilder/Tjänster.jpg" alt="">
+            
+            <div class="avsnitt" id="middle">
+                <div class="card">
+                    <div class="card-body cBB cBC">
+                        <h2 id="textCenter">
+                            Björkbäcks advokatbyrå
+                        </h2>
+                        <h3 >
+                            Björkbäcks advokatbyrå är här för att hjälpa de som har ont om pengar 
+                            men även dem som vill ha kvalité. Vi vill få fram den bästa kvalitén 
+                            för det lägsta priset. Detta resulterar i att våra medarbetare skapade 
+                            denna advokatbyår för att uppnå denna kvalité för en billig peng.<br><br>
+                            Om det är något är det bara och gå till "Kontakta oss"(uppe i navigations baren) sidan där du 
+                            kan skicka in ett meddelande till oss.
+                        </h3>
+                    </div>                        
+                </div>
+            </div>
+
+            <div class="avsnitt">
+                <div class="lillaAvsnittet">
+                    <div class="card">
+                        <div class="card-body ">
+                            <h2>
+                                Vem är vi?
+                            </h2>
+                            <h3>
+                                Vi är 4 personer som är delägare i detta företaget men bara 3 som 
+                                praktiserar. Däremot är de 3 väldigt kompetenta jurister som har 
+                                lång arbets erfarenhet. Klicka på knappen här bredvid för att komma 
+                                vidare.
+                            </h3>
+                            
+                        </div>
+                    </div>
+                    <a href="medarbetare.html">
+                        <button>Medar<br>betare</button>
+                        </a>
+                </div>
+            </div>  
+
+            <img class="tjänsterbild1"src="../Bilder/Tjänster.jpg" alt="">
+
+            <div class="avsnitt">
+                <div class="lillaAvsnittet">
+                    <div class="card">
+                        <div class="card-body ">
+                            <h2>
+                                Vilka tjänster har vi?
+                            </h2>
+                            <h3>
+                                Vi har inte alla tjänster som finns och erbjuda men vi har valt 
+                                och fokusera på några väl utvalda avtal som vi tycker har stor
+                                verkan i ens liv. <br><br>
+                                Klicka på knappen här bredvid så tar du dig till våra tjänster.
+                            </h3>
+                            
+                        </div>
+                    </div>
+                    <a href="tjänster.html">
+                        <button>Tjänster</button>
+                        </a>
+                </div>
+                
+            </div>  
+            <div class="avsnitt">
+                <div class="lillaAvsnittet">
+                    <div class="card">
+                        <div class="card-body ">
+                            <h2>
+                                Vad har vi för priser?
+                            </h2>
+                            <h3>
+                                Här kan ni beställa era avtal som en vanlig internet shopp. Klicka på knappen 
+                                så kommer just det avtalet att läggas in i varkorgsvagnen uppe i högra hörnet 
+                                där ni sedan kan betala
+                            </h3>
+                            
+                        </div>
+                    </div>
+                    <a href="priser.html">
+                        <button>Priser</button>
+                        </a>
+                </div>
+            </div>  
+
+            <img class="tjänsterbild1"src="../Bilder/Tjänster.jpg" alt="">
+
+            <div class="avsnitt" id="middle2">
+                <div class="card" style="width:40; text-align: center;">
+                    <div class="card-body cBC cBB2">
+                        <h3 id="h3M" >
+                            Kontakta genom att klicka på denna knapp. Då kommer du till rätt sida
+                        </h3>
+                        <a href="kontaktaOss.html">
+                            <button id="bM">Kontakta oss</button>
+                            </a>
+                    </div>                        
+                </div>
+            </div>  
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <div class="footerLeft">
+            <ul>
+                <li>B.Advokatbyra@gmail.com</li>
+                <li>036-456135</li>
+                <li>Klicka på knappen för att kontakta oss på hemsidan</li>
+                <li><button>Kontakta oss</button></li>
+            </ul>
+            <ul class="footerUl">
+                <li>Snabblänkar</li>
+                <li><a href="Index.html">Startsida</a></li>
+                <li><a href="priser.html">Priser</a></li>
+                <li><a href="tjänster.html">Tjänster</a></li>
+                <li><a href="kontaktaOss.html">Kontakta oss</a></li>
+                <li><a href="medarbetare.html">Medarbetare</a></li>
+            </ul>
+        </div>
+        <ul>
+            <li>Björkbäcks advokatbyrå <img src="" alt=""></li>
+            <li>Sedan 2021</li>
+        </ul>
+    </footer>
+</body>
+
+</HTMl>

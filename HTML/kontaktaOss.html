@@ -1,0 +1,141 @@
+<HTMl lang="en">
+
+    <head>
+        <link rel="stylesheet" href="../CSS/Stilark.css">
+        <link rel="stylesheet" href="../CSS/Stilark Cards.css">
+        <link rel="stylesheet" href="../CSS/Stilark Forms.css">
+        <title>Björkbäcks Advokatbyrå</title>
+        <meta charset="UTF-8">
+        <script src=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <header class="header">
+            <img src="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG"
+                alt="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG">
+            <nav class="nav">
+                <ul>
+                    <li><a href="Index.html">Startsida</a></li>
+                    <li><a href="priser.html">Priser</a></li>
+                    <li><a href="tjänster.html">Tjänster</a></li>
+                    <li><a href="kontaktaOss.html">Kontakta oss</a></li>
+                    <li><a href="medarbetare.html">Medarbetare</a></li>
+                </ul>
+            </nav>
+            <div class="shoppingVagn">
+                <span class="bricka" id="räknare">0</span>
+                <img class="imgKundvagn"src="../Bilder/Shopping cart grå.svg" alt="../Bilder/Shoppinh cart Grå.svg" onclick="vagnAktiv();">
+                <div id="informationShoppingVagn" class="shoppingVagnRuta">
+                    <table id="vagn">
+                        <tr>
+                            <td>Avtal</td>
+                            <td>Pris</td>
+                        </tr>
+                    </table>
+                    <div id="Summa">0 sek</div>
+                    <button onclick="rensa()" class="rensa">Röj Avtal</button>
+                    <button onclick="betala()" class="betala">Betala</button>
+                </div>
+            </div>
+        </header>
+    
+    
+    
+    
+    
+        
+        <section>
+            <div class="container">
+
+                <h1>Kontakta oss</h1>
+    
+                <img class="tjänsterbild1"src="../Bilder/Tjänster.jpg" alt="">
+                
+                <div class="avsnitt avFH" id="middle">
+                    <div class="card">
+                        <div class="card-body cBB cBC ">
+                            <h2>
+                                Kontakt
+                            </h2>
+                            <h3>
+                                Här kontaktar ni oss. Föj formuläret och lägg in svar i 
+                                varje box.
+                            </h3>
+                            <form>
+                                <div class="formPart1">
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput">Välj alternativ</label>
+                                        <select name="" id="" placeholder="Välj alternativ">
+                                            <option value="">Meddelande</option>
+                                            <option value="">Besök</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput">Välj alternativ</label>
+                                        <select name="" id="" placeholder="Vilken Jurist">
+                                            <option value="">Victor Reinhardt</option>
+                                            <option value="">Börje Danielsson</option>
+                                            <option value="">Elon Alfredsson</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="formPart2">
+                                    <div class="form-group">
+                                    <label for="formGroupExampleInput">Namn:</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Förnamn, Efternamn">
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="formGroupExampleInput2">Email:</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="example@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="formPart3">
+                                    <div class="form-group">
+                                        <label for="">Meddelande</label>
+                                        <textarea name="" id="" cols="57" rows="7" placeholder="Skriv ditt meddelande här:">
+                                        </textarea>
+                                    </div>
+                                    <button onclick="alert('Meddelandet är skickat')">Skicka</button>
+                                </div>                                
+                            </form>
+                              
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+    
+    
+    
+    
+        <footer>
+            <div class="footerLeft">
+                <ul>
+                    <li>B.Advokatbyra@gmail.com</li>
+                    <li>036-456135</li>
+                    <li>Klicka på knappen för att kontakta oss på hemsidan</li>
+                    <li><button>Kontakta oss</button></li>
+                </ul>
+                <ul class="footerUl">
+                    <li>Snabblänkar</li>
+                    <li><a href="Index.html">Startsida</a></li>
+                    <li><a href="priser.html">Priser</a></li>
+                    <li><a href="tjänster.html">Tjänster</a></li>
+                    <li><a href="kontaktaOss.html">Kontakta oss</a></li>
+                    <li><a href="medarbetare.html">Medarbetare</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li>Björkbäcks advokatbyrå <img src="" alt=""></li>
+                <li>Sedan 2021</li>
+            </ul>
+        </footer>
+    </body>
+    
+    </HTMl>

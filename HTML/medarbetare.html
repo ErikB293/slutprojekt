@@ -1,0 +1,164 @@
+<HTMl lang="en">
+
+    <head>
+        <link rel="stylesheet" href="../CSS/Stilark.css">
+        <link rel="stylesheet" href="../CSS/Stilark Cards.css">
+        <link rel="stylesheet" href="../CSS/Stilark Forms.css">
+        <title>Björkbäcks Advokatbyrå</title>
+        <meta charset="UTF-8">
+        <script src="../JAVA/accordian.js"></script>
+        <script src="../JAVA/shoppingVagn.js"></script>
+    </head>
+    
+    <body>
+        <header class="header">
+            <img src="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG"
+                alt="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG">
+            <nav class="nav">
+                <ul>
+                    <li><a href="Index.html">Startsida</a></li>
+                    <li><a href="priser.html">Priser</a></li>
+                    <li><a href="tjänster.html">Tjänster</a></li>
+                    <li><a href="kontaktaOss.html">Kontakta oss</a></li>
+                    <li><a href="medarbetare.html">Medarbetare</a></li>
+                </ul>
+            </nav>
+            <div class="shoppingVagn">
+                <span class="bricka" id="räknare">0</span>
+                <img class="imgKundvagn"src="../Bilder/Shopping cart grå.svg" alt="../Bilder/Shoppinh cart Grå.svg" onclick="vagnAktiv();">
+                <div id="informationShoppingVagn" class="shoppingVagnRuta">
+                    <table id="vagn">
+                        <tr>
+                            <td>Avtal</td>
+                            <td>Pris</td>
+                        </tr>
+                    </table>
+                    <div id="Summa">0 sek</div>
+                    <button onclick="rensa()" class="rensa">Röj Avtal</button>
+                    <button onclick="betala()" class="betala">Betala</button>
+                </div>
+            </div>
+        </header>
+    
+    
+    
+    
+    
+        
+        <section>
+            <div class="container">
+
+                <h1>Medarbetare</h1>
+
+                <img class="tjänsterbild1"src="../Bilder/Tjänster.jpg" alt="">
+
+                <div class="avsnitt noOverflow" id="avAccV">
+                    <div class="card">
+                        <div class="card-body mCB">
+                            <div>
+                                <h2>
+                                    Victor Reinhardt
+                                </h2>
+                                <h3>
+                                    Victor Reinhardt är en erfaren skarp skilsmässojurist som har 2 års erfarenhet
+                                    däremot så är han en av de skarpaste skilsmässojursiterna här i Jönköping.
+                                </h3>
+                                <h3>
+                                    <br>
+                                    <button id="V" class="medarbetarButton" onclick="openPanel(this);">Klicka för mer information</button>
+                                    <br><br><br>
+                                    Reinhardt har varit med och hjälpt flertal olika personer med sina skilsmässor. 
+                                    Oavset vem det han nu försvarar är det fortfarande den person personliga bästa
+                                    som ligger i fokus. Sedan håller Reinhardt på med Bodelningsavtal för gifta samt
+                                    äktenskapsförord.
+                                </h3>
+                            </div>
+                            <img src="../Bilder/Poträtt/Victor Reinhardt.PNG" alt="">
+                        </div>                        
+                    </div>
+                </div> 
+                <div class="avsnitt noOverflow" id="avAccB">
+                    <div class="card">
+                        <div class="card-body mCB">
+                            <div>
+                                <h2>
+                                    Börje Danielsson
+                                </h2>                            
+                                <h3>
+                                    Börje Danielsson är 48 år och har arbetat som jurister 15+ år och han har ansvar
+                                    för eventuella frågor och svar angående Regressavtal och Testamente.
+                                </h3>
+                                <h3>
+                                    <br>
+                                    <button id="B" class="medarbetarButton" onclick="openPanel(this);">Klicka för mer information</button>
+                                    <br><br><br>
+                                    Börje har jobbat längst här på Björkbäcks advokatbyrå och har många jobb- och 
+                                    livserfarenheter. Han arbetar med Regressavtal och Testamente och han svarar på 
+                                    frågor samt besök angående dem. Han har totalt 18 år av erfarenhet. Han har 
+                                    kompetens. 
+                                </h3>
+                            </div>
+                            <img src="../Bilder/Poträtt/Börje Danielsson.PNG" alt="Börje Danielsson">
+                        </div>                        
+                    </div>
+                </div> 
+                <div class="avsnitt noOverflow" id="avAccE">
+                    <div class="card">
+                        <div class="card-body mCB">
+                            <div>
+                                <h2>
+                                    Elon Alfredsson
+                                </h2>
+                                <h3>
+                                    Elon Alfredsson är nyutbildad jursit och har inte jätte många erfarenheter.
+                                    Eftersom Alfredsson är nyutbildad har han bättre koll på alla regler än andra.
+                                </h3>
+                                <h3>
+                                    <br>
+                                    <button id="E" class="medarbetarButton" onclick="openPanel(this);">Klicka för mer information</button>
+                                    <br><br><br>
+                                    Alfredsson jobbar för det mästa med att överklaga parkeringsböter samt köpekontrakt
+                                    för allmänna saker samt köpekontrakt för bil. Det är just dessa områden man behöver 
+                                    stor koll på området så man inte missar någon detalj och det är exakt vad Alfredsson 
+                                    är bra på, information. 
+                                </h3>
+                            </div>
+                            <img src="../Bilder/Poträtt/Elon Alfredsson.PNG" alt="">
+                        </div>                        
+                    </div>
+                </div> 
+                          
+            </div>
+        </section>
+    
+    
+    
+    
+    
+    
+    
+        <footer>
+            <div class="footerLeft">
+                <ul>
+                    <li>B.Advokatbyra@gmail.com</li>
+                    <li>036-456135</li>
+                    <li>Klicka på knappen för att kontakta oss på hemsidan</li>
+                    <li><button>Kontakta oss</button></li>
+                </ul>
+                <ul class="footerUl">
+                    <li>Snabblänkar</li>
+                    <li><a href="Index.html">Startsida</a></li>
+                    <li><a href="priser.html">Priser</a></li>
+                    <li><a href="tjänster.html">Tjänster</a></li>
+                    <li><a href="kontaktaOss.html">Kontakta oss</a></li>
+                    <li><a href="medarbetare.html">Medarbetare</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li>Björkbäcks advokatbyrå <img src="" alt=""></li>
+                <li>Sedan 2021</li>
+            </ul>
+        </footer>
+    </body>
+    
+    </HTMl>

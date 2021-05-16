@@ -99,6 +99,16 @@ footer ul li{
     color: #d6d6d6;
     padding: 0vh 1vw;
 }
+#footerLeftBtn{
+    width: 9vw;
+    height: 4vh;
+    background-color: #d6d6d6;
+    color: #1a216B;
+    border: solid #d6d6d6 0.2vw;
+    border-radius: 5px;
+    box-shadow: black 0px 2px;
+    padding: 0px;
+}
 .footerLeft{
 display: flex;
 }
@@ -317,14 +327,37 @@ label{
     width: 10vw;
     height: 5vh;
 }
+#Summa{
+    color: #ffffff;
+    background-color:#b39722;
+    max-width: 19.67vw;
+    padding: 1px;
+    border: #b39722 solid 5px;
+    border-radius: 5px;
+    margin-left: 0.5vw;
+}
 #informationShoppingVagn{
-    background-color: #d6d6d6;
-    width: 20vh;
+    background-color: #1a216b;
+    width: 21vw;
     min-height: 20vh;
     position: absolute;
     display: none;
     right: 0px;
-    border-radius: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+#informationShoppingVagn button{
+  width: 4.4vw;
+  height: 3vh;
+  margin-top: 0.2vh;
+  margin-left: 0.5vw; 
+}
+.vagnUppdelning{
+    display: flex;
+    flex-direction: row;
+}
+.vagnBtn{
+  display: flex;
+  flex-direction: column;
 }
 .imgKundvagn{
     width: 40px;
@@ -334,12 +367,12 @@ label{
 .rensa{
     border: none;
     padding: 2px 5px;
-    border-radius: 5px;
-    background-color: blue;    
+    border-radius: 5px;    
 }
 #vagn td{
     background-color: #d6d6d6;
     border-radius: 5px;
+    min-width: 7.23vw;
     padding: 5px;
     font-size: medium;
     width: 20%;

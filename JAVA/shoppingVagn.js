@@ -2,7 +2,7 @@ let total = 0;
 
 function rensa() {
     let tabell = document.getElementById("vagn");
-    tabell.innerHTML = "<tr><td>Name</td><td>Pris</td></tr>";
+    tabell.innerHTML = "<tr><td>Avtal</td><td>Pris</td></tr>";
     total = 0;
     updateElements(total);
 
@@ -28,15 +28,15 @@ function vagnAktiv() {
 function add2Cart(obj) {
 
 
-    let namn = obj.innerHTML;
+    let Avtal = obj.innerHTML;
     let pris = parseInt(obj.value);
 
-    console.log(namn + " kostar " + pris + " SEK");
+    console.log(Avtal + " kostar " + pris + " SEK");
 
     let tabell = document.getElementById("vagn");
     let rad = tabell.insertRow();
     let cell1 = rad.insertCell();
-    cell1.innerHTML = namn;
+    cell1.innerHTML = Avtal;
     let cell2 = rad.insertCell();
     cell2.innerHTML = pris + " SEK";
 

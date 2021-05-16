@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="../CSS/Stilark.css">
         <link rel="stylesheet" href="../CSS/Stilark Cards.css">
         <link rel="stylesheet" href="../CSS/Stilark Forms.css">
+        <script src="../JAVA/shoppingVagn.js"></script>
         <title>Björkbäcks Advokatbyrå</title>
         <meta charset="UTF-8">
         <script src=""></script>
@@ -25,28 +26,30 @@
                     <li><a href="medarbetare.html">Medarbetare</a></li>
                 </ul>
             </nav>
-            <div class="shoppingVagn">
-                <span class="bricka" id="räknare">0</span>
-                <img class="imgKundvagn"src="../Bilder/Shopping cart grå.svg" alt="../Bilder/Shoppinh cart Grå.svg" onclick="vagnAktiv();">
-                <div id="informationShoppingVagn" class="shoppingVagnRuta">
-                    <table id="vagn">
-                        <tr>
-                            <td>Avtal</td>
-                            <td>Pris</td>
-                        </tr>
-                    </table>
-                    <div id="Summa">0 sek</div>
-                    <button onclick="rensa()" class="rensa">Röj Avtal</button>
-                    <button onclick="betala()" class="betala">Betala</button>
-                </div>
+            <div class="shoppingVagn" onClick="vagnAktiv()">
+                <img class="imgKundvagn" src="../Bilder/Shopping cart grå.svg" alt="../Bilder/Shoppinh cart Grå.svg">
             </div>
         </header>
     
     
+        <div id="informationShoppingVagn" class="shoppingVagnRuta">
+            <div id="Summa">Total: 0 SEK</div>
+            <div class="vagnUppdelning">
+                <div class="vagnBtn">
+                    <button onclick="rensa()" class="rensa">Röj</button>
+                    <button onclick="betala()" class="betala">Betala</button>
+                </div>
+                <table id="vagn">
+                    <tr>
+                        <td>Avtal</td>
+                        <td>Pris</td>
+                    </tr>
+                </table>            
+            </div>
+        </div>
     
     
     
-        
         <section>
             <div class="container">
 
@@ -132,7 +135,7 @@
                     <li>B.Advokatbyra@gmail.com</li>
                     <li>036-456135</li>
                     <li>Klicka på knappen för att kontakta oss på hemsidan</li>
-                    <li><button>Kontakta oss</button></li>
+                    <li><a href="kontaktaOss.html"><button id="footerLeftBtn">Kontakta oss</button></a></li>
                 </ul>
                 <ul class="footerUl">
                     <li>Snabblänkar</li>

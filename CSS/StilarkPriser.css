@@ -157,7 +157,7 @@ display: flex;
     margin-top: 5px;
     border: 0px!important;
   }
-  button{
+  a button{
     width: 3.4vw;
     height: 20vh;
     border-top-left-radius: 0px;
@@ -182,8 +182,6 @@ display: flex;
   .buttons button{
     margin: 0.4vh 0.2vw;
     border-radius: 0px;
-    width: 9vw;
-    height: 4vh;
     
   }
   .card-body h3, .card-body h2{
@@ -216,6 +214,7 @@ display: flex;
     width: 13vw;
     height: 6vh;
     border-radius: 5px;
+    margin: 0px;
   }
   #avAccV{
     height: 21.5vh;
@@ -245,10 +244,10 @@ display: flex;
     display: flex;
     flex-direction: row;
   }
-  .priserKontaktaOss button{
+  .priserKontaktaOss a{
     margin-top: 3vh;
   }
-  .priserKontaktaOss > button{
+  .priserKontaktaOss > a > button{
     width: 8vw!important;
     height: 4vh!important;
   }
@@ -264,7 +263,7 @@ display: flex;
   .h3M{
     margin: 2.5vh 10vw!important;
   }
-  .cBB2 button{
+  .cBB2 a{
     margin:  3vh auto;
   }
   .card-body table{

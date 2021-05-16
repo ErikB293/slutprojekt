@@ -1,21 +1,21 @@
+<!DOCTYPE html>
 <HTMl lang="en">
 
     <head>
         <link rel="stylesheet" href="../CSS/Stilark.css">
-        <link rel="stylesheet" href="../CSS/Stilark Cards.css">
-        <link rel="stylesheet" href="../CSS/Stilark Forms.css">
+        <link rel="stylesheet" href="../CSS/StilarkCards.css">
+        <link rel="stylesheet" href="../CSS/StilarkForms.css">
         <script src="../JAVA/shoppingVagn.js"></script>
+        <script src="../JAVA/accordian.js"></script>
         <title>Björkbäcks Advokatbyrå</title>
         <meta charset="UTF-8">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-            crossorigin="anonymous"></script>
+        
     </head>
     
     <body>
         <header class="header">
-            <img src="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG"
-                alt="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG">
+            <img src="../Bilder/Logotyper/LogotypBlåbakgrundMedGråtext.PNG"
+                alt="boi">
             <nav class="nav">
                 <ul>
                     <li><a href="Index.html">Startsida</a></li>
@@ -26,7 +26,7 @@
                 </ul>
             </nav>
             <div class="shoppingVagn" onClick="vagnAktiv()">
-                <img class="imgKundvagn" src="../Bilder/Shopping cart grå.svg" alt="../Bilder/Shoppinh cart Grå.svg">
+                <img class="imgKundvagn" src="../Bilder/Shoppingcartgrå.svg" alt="boi">
             </div>
         </header>
     
@@ -54,7 +54,7 @@
 
                 <h1>Kontakta oss</h1>
     
-                <img class="tjänsterbild1"src="../Bilder/Tjänster.jpg" alt="">
+                <img class="tjänsterbild1" src="../Bilder/Tjänster.jpg" alt="">
                 
                 <div class="avsnitt avFH" id="middle">
                     <div class="card">
@@ -70,14 +70,14 @@
                                 <div class="formPart1">
                                     <div class="form-group">
                                         <label for="formGroupExampleInput">Välj alternativ</label>
-                                        <select name="" id="" placeholder="Välj alternativ">
+                                        <select name="Välj alternativ" id="vA">
                                             <option value="">Meddelande</option>
                                             <option value="">Besök</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="formGroupExampleInput">Välj alternativ</label>
-                                        <select name="" id="" placeholder="Vilken Jurist">
+                                        <select name="Vilken Jurist" id="vJ">
                                             <option value="">Victor Reinhardt</option>
                                             <option value="">Börje Danielsson</option>
                                             <option value="">Elon Alfredsson</option>
@@ -96,8 +96,8 @@
                                 </div>
                                 <div class="formPart3">
                                     <div class="form-group">
-                                        <label for="">Meddelande</label>
-                                        <textarea name="" id="" cols="57" rows="7" placeholder="Skriv ditt meddelande här:">
+                                        <label>Meddelande</label>
+                                        <textarea name="textArea" id="tA" cols="59" rows="7" placeholder="Skriv ditt meddelande här:">
                                         </textarea>
                                     </div>
                                     <button onclick="alert('Meddelandet är skickat')">Skicka</button>
@@ -122,7 +122,7 @@
                     <li>B.Advokatbyra@gmail.com</li>
                     <li>036-456135</li>
                     <li>Klicka på knappen för att kontakta oss på hemsidan</li>
-                    <li><a href="kontaktaOss.html"><button id="footerLeftBtn">Kontakta oss</button></a></li>
+                    <li><button id="footerLeftBtn" onclick="window.location.href='KontaktaOss.html';">Kontakta oss</button></li>
                 </ul>
                 <ul class="footerUl">
                     <li>Snabblänkar</li>
@@ -134,7 +134,7 @@
                 </ul>
             </div>
             <ul>
-                <li>Björkbäcks advokatbyrå <img src="" alt=""></li>
+                <li>Björkbäcks advokatbyrå</li>
                 <li>Sedan 2021</li>
             </ul>
         </footer>

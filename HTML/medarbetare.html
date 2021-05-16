@@ -1,20 +1,21 @@
-<HTMl lang="en">
+<!DOCTYPE html>
+<HTMl lang="sv">
 
     <head>
         <link rel="stylesheet" href="../CSS/Stilark.css">
-        <link rel="stylesheet" href="../CSS/Stilark Cards.css">
-        <link rel="stylesheet" href="../CSS/Stilark Forms.css">
+        <link rel="stylesheet" href="../CSS/StilarkCards.css">
+        <link rel="stylesheet" href="../CSS/StilarkForms.css">
         <script src="../JAVA/shoppingVagn.js"></script>
+        <script src="../JAVA/accordian.js"></script>
         <title>Björkbäcks Advokatbyrå</title>
         <meta charset="UTF-8">
-        <script src="../JAVA/accordian.js"></script>
-        <script src="../JAVA/shoppingVagn.js"></script>
+        
     </head>
     
     <body>
         <header class="header">
-            <img src="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG"
-                alt="../Bilder/Logotyper/Logotyp Blåbakgrund med gråtext.PNG">
+            <img src="../Bilder/Logotyper/LogotypBlåbakgrundMedGråtext.PNG"
+                alt="boi">
             <nav class="nav">
                 <ul>
                     <li><a href="Index.html">Startsida</a></li>
@@ -25,7 +26,7 @@
                 </ul>
             </nav>
             <div class="shoppingVagn" onClick="vagnAktiv()">
-                <img class="imgKundvagn" src="../Bilder/Shopping cart grå.svg" alt="../Bilder/Shoppinh cart Grå.svg">
+                <img class="imgKundvagn" src="../Bilder/Shoppingcartgrå.svg" alt="boi">
             </div>
         </header>
     
@@ -53,7 +54,7 @@
 
                 <h1>Medarbetare</h1>
 
-                <img class="tjänsterbild1"src="../Bilder/Tjänster.jpg" alt="">
+                <img class="tjänsterbild1" src="../Bilder/Tjänster.jpg" alt="">
 
                 <div class="avsnitt noOverflow" id="avAccV">
                     <div class="card">
@@ -76,7 +77,7 @@
                                     äktenskapsförord.
                                 </h3>
                             </div>
-                            <img src="../Bilder/Poträtt/Victor Reinhardt.PNG" alt="">
+                            <img src="../Bilder/Poträtt/VictorReinhardt.PNG" alt="VictorReighardt">
                         </div>                        
                     </div>
                 </div> 
@@ -101,7 +102,7 @@
                                     kompetens. 
                                 </h3>
                             </div>
-                            <img src="../Bilder/Poträtt/Börje Danielsson.PNG" alt="Börje Danielsson">
+                            <img src="../Bilder/Poträtt/BörjeDanielsson.PNG" alt="BörjeDanielsson">
                         </div>                        
                     </div>
                 </div> 
@@ -126,7 +127,7 @@
                                     är bra på, information. 
                                 </h3>
                             </div>
-                            <img src="../Bilder/Poträtt/Elon Alfredsson.PNG" alt="">
+                            <img src="../Bilder/Poträtt/ElonAlfredsson.PNG" alt="ElonAlfredsson">
                         </div>                        
                     </div>
                 </div> 
@@ -146,7 +147,7 @@
                     <li>B.Advokatbyra@gmail.com</li>
                     <li>036-456135</li>
                     <li>Klicka på knappen för att kontakta oss på hemsidan</li>
-                    <li><a href="kontaktaOss.html"><button id="footerLeftBtn">Kontakta oss</button></a></li>
+                    <li><button id="footerLeftBtn" onclick="window.location.href='KontaktaOss.html';">Kontakta oss</button></li>
                 </ul>
                 <ul class="footerUl">
                     <li>Snabblänkar</li>
@@ -158,7 +159,7 @@
                 </ul>
             </div>
             <ul>
-                <li>Björkbäcks advokatbyrå <img src="" alt=""></li>
+                <li>Björkbäcks advokatbyrå</li>
                 <li>Sedan 2021</li>
             </ul>
         </footer>

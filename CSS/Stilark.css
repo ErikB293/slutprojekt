@@ -50,7 +50,7 @@ button:active{
 
 /*Header*/
 .header{
-    width: 99.1vw;
+    width: 100vw;
     height: 12vh;
     background-color: #1a216B;
     display: flex;
@@ -173,13 +173,13 @@ display: flex;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
-  .buttons{
+  .btns{
     display: flex;
     flex-wrap: wrap;
     margin: 1vh 1.9vw;
     width: 38vw;
   }
-  .buttons button{
+  .btns button{
     margin: 0.4vh 0.2vw;
     border-radius: 0px;
     width: 9vw;
@@ -201,6 +201,7 @@ display: flex;
   /*Kort i mitten*/
   #middle{
     width: 86vw;
+    min-height: 30vh;
   }
   #middle{
     margin-left: auto;
@@ -208,9 +209,6 @@ display: flex;
   }
   #middle2{
     width: 40vw;
-  }
-  #cBB h2{
-    padding: 0px;
   }
   #bM{
     width: 13vw;
@@ -229,18 +227,19 @@ display: flex;
     height: 21.5vh;
     transition: 0.4s;
   }
-  .avFH{
-    height: 53vh;
+  .avsnittFormHeight{
+    height: 58vh;
   }
-  .cBC{
+  .avsnittPriserHeight{
+    height: 59vh;
+  }
+  .cardBodyCorner{
     border-radius: 5px!important;
   }
-  .cBB{
+  .cardBodyBredd{
     width: 54.3vw!important;
   }
-  .avBH{
-    height: 53vh;
-  }
+  
   .priserKontaktaOss{
     display: flex;
     flex-direction: row;
@@ -256,15 +255,15 @@ display: flex;
     width: 20vw;
     margin-bottom: 2vh!important;
   }
-  .cBB2{
+  .cardBodyBredd2{
     display: flex;
     flex-direction: column;
     height:20vh;
   }
-  .h3M{
+  .h3Margin{
     margin: 2.5vh 10vw!important;
   }
-  .cBB2 button{
+  .cardBodyBredd2 button{
     margin:  3vh auto;
   }
   .card-body table{
@@ -274,22 +273,22 @@ display: flex;
     margin-left: 2vw;
     width: 15vw;
   }
-  .medarbetarButton{
+  .medarbetarBtn{
     width: 25vw!important;
     height: 2vh!important;
     box-shadow: black 0px 2px;
     cursor: pointer;
   }
-  .medarbetarButton:active{
+  .medarbetarBtn:active{
     box-shadow: none;
   }
-  .mCB{
+  .medarbetarCardBtn{
     border-bottom-right-radius: 0px!important;
     border-bottom-left-radius: 0px!important;
     border-top-right-radius: 0px!important;
     display: flex;
   }
-  .mCB img{
+  .medarbetarCardBtn img{
       width: 8vw;
       height: 15vh;
       margin: 3vh 1vw;
@@ -313,8 +312,8 @@ label{
 }
 .formPart3 > button{
     width: 2.5vw;
-    height: 11vh;
-    margin-top: 2vh;
+    height: 10.41vh;
+    margin-top: 2.2vh;
     margin-left: 0px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -324,7 +323,7 @@ label{
 /*Vanliga bilder*/
 .tjänsterbild1{
     max-width: 98vw;
-    max-height: 30vh;
+    max-height: 45vh;
 }
 /* All CSS till Kassan*/
 

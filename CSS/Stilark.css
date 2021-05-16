@@ -1,7 +1,8 @@
 *{
     margin: 0px;
 }
-
+body{
+}
 /*Vanligt*/
 h1{
     font-size: 5vh;
@@ -77,7 +78,7 @@ button:active{
 
 /*section*/
 section{
-    min-height: 73vh;
+    min-height: 20vh;
     margin: 0.2vh 0px;
 }
 
@@ -278,6 +279,7 @@ display: flex;
     height: 2vh!important;
     box-shadow: black 0px 2px;
     cursor: pointer;
+    
   }
   .medarbetarBtn:active{
     box-shadow: none;
@@ -296,6 +298,9 @@ display: flex;
   .noOverflow{
       overflow: hidden;
   }
+  .noOverflow-x{
+      overflow-x: hidden;
+  }
   
   
 /*Forms CSS*/
@@ -312,8 +317,8 @@ label{
 }
 .formPart3 > button{
     width: 2.5vw;
-    height: 10.41vh;
-    margin-top: 2.2vh;
+    height: 9.9vh;
+    margin-top: 2.0vh;
     margin-left: 0px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -327,11 +332,7 @@ label{
 }
 /* All CSS till Kassan*/
 
-.vagn{
-    float: right;
-    width: 10vw;
-    height: 5vh;
-}
+
 #Summa{
     color: #ffffff;
     background-color:#b39722;
@@ -344,17 +345,22 @@ label{
 #informationShoppingVagn{
     background-color: #1a216b;
     width: 21vw;
-    min-height: 20vh;
+    height: 20vh;
     position: absolute;
     display: none;
     right: 0px;
     border-radius: 0px 0px 5px 5px;
+    overflow: hidden;
 }
 #informationShoppingVagn button{
   width: 4.4vw;
   height: 3vh;
   margin-top: 0.2vh;
   margin-left: 0.5vw; 
+}
+.lillavagnen{
+  height:16.63vh;
+  overflow-y: scroll;
 }
 .vagnUppdelning{
     display: flex;
@@ -377,8 +383,11 @@ label{
 #vagn td{
     background-color: #d6d6d6;
     border-radius: 5px;
-    min-width: 7.23vw;
     padding: 5px;
     font-size: medium;
-    width: 20%;
+}
+#vagn{
+  float: right;
+  width: 14.8vw;
+  height: 5vh;
 }

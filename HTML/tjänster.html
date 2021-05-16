@@ -12,7 +12,7 @@
         
     </head>
     
-    <body class="noOverflow">
+    <body class="noOverflow-x">
         <header class="header">
             <img src="../Bilder/Logotyper/LogotypBlåbakgrundMedGråtext.PNG" alt="boi" onclick="window.location.href='Index.html';">
             <nav class="nav">
@@ -31,18 +31,20 @@
 
 
     <div id="informationShoppingVagn" class="shoppingVagnRuta">
-        <div id="Summa">Total: 0 SEK</div>
+    <div id="Summa">Total: 0 SEK</div>
         <div class="vagnUppdelning">
             <div class="vagnBtn">
                 <button onclick="rensa()" class="rensa">Röj</button>
                 <button onclick="betala()" class="betala">Betala</button>
             </div>
-            <table id="vagn">
-                <tr>
-                    <td>Avtal</td>
-                    <td>Pris</td>
-                </tr>
-            </table>            
+            <div class="lillavagnen">
+                <table id="vagn">
+                    <tr>
+                        <td>Avtal</td>
+                        <td>Pris</td>
+                    </tr>
+                </table>  
+            </div>          
         </div>
     </div>
 
